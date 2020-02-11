@@ -14,3 +14,11 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/index', 'IndexController@test');
+
+Route::get('/qui-sommes-nous', 'PresentationController@test');
+
+Route::get('/nos-pronostiques', 'PrognosticsController@test');
+
+Route::get('/nous-contactez', 'ContactUsController@test');
