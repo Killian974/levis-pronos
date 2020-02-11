@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+}
+
+.topContainer {
+    background-image: url("https://www.gagnargent.com/wp-content/uploads/2016/06/R%C3%A8gles-%C3%A0-suivre-pour-gagner-un-paris-sportif-e1559129566818.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.7;
+}
+
+.topContainer > div {
+    text-align: center;
+    padding: 6%;
+}
+
+h1 {
+    font-size: 40px;
+    font-family: monospace;
+    font-weight: bold;
+}
+
+p {
+    font-size: 25px;
+    font-family: monospace;
+}
