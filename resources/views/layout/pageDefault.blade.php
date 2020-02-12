@@ -13,10 +13,7 @@
 <body>
 @include('layout.header')
 
-@yield('pageTitle')
-@yield('test')
-@yield('tab')
-
+@yield('content')
 
 @include('layout.footer')
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
