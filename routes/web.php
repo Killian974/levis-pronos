@@ -11,11 +11,17 @@
 |
 */
 
+use App\Mail\MailtrapExample;
+use Illuminate\Support\Facades\Mail;
+
 Route::get('/welcome', function () {
     return view('welcome');
 });
 
 Route::get('/', 'IndexController@test');
+Route::post('/', 'IndexController@sendMail');
+
+
 
 Route::get('/qui-sommes-nous', 'PresentationController@test');
 
