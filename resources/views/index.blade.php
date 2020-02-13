@@ -46,7 +46,13 @@
     <div class="row">
       <div class="col"></div>
       <p class="col newsletterText">Recevez nos derniers pronostiques : </p>
-      <input type="email" class="col newsletterInput" placeholder="Votre Email..." />
+        <form method="POST">
+            @csrf
+
+            <input type="email" id="email" name="email" class="col newsletterInput" placeholder="Votre Email..." required/>
+            <button type="submit">Ok</button>
+        </form>
+
       <div class="col"></div>
     </div>
   </div>

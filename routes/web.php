@@ -11,18 +11,30 @@
 |
 */
 
+use App\Mail\mailAdmin;
+use Illuminate\Support\Facades\Mail;
+
 Route::get('/welcome', function () {
     return view('welcome');
 });
-
+/**
+ * Route de l'index + post envoyant les deux emails
+ */
 Route::get('/', 'IndexController@showView');
+Route::post('/', 'IndexController@sendMail');
 
-Route::get('/accueil', 'IndexController@showView');
-
+/**
+ * Route vers la page de présentation de l'équipe
+ */
 Route::get('/qui-sommes-nous', 'PresentationController@showView');
 
+/**
+ * Route menant aux pronostiques
+ */
 Route::get('/pronostiques', 'PrognosticsController@showView');
 
+/**
+ * Route page contact
+ */
 Route::get('/contact', 'ContactUsController@showView');
-
 Route::post('/contact', 'ContactUsController@sendForm');
