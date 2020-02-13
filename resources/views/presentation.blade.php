@@ -1,7 +1,6 @@
 @extends('layout.pageDefault')
 
 @section('title', 'Qui-sommes-nous')
-@section('css', 'css/aboutUs.css')
 
 <link rel="stylesheet" type="text/css" href="{{ asset('css/aboutUs.css') }}">
 

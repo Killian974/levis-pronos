@@ -15,10 +15,14 @@ Route::get('/welcome', function () {
     return view('welcome');
 });
 
-Route::get('/', 'IndexController@test');
+Route::get('/', 'IndexController@showView');
 
-Route::get('/qui-sommes-nous', 'PresentationController@test');
+Route::get('/accueil', 'IndexController@showView');
 
-Route::get('/nos-pronostiques', 'PrognosticsController@test');
+Route::get('/qui-sommes-nous', 'PresentationController@showView');
 
-Route::get('/nous-contactez', 'ContactUsController@test');
+Route::get('/pronostiques', 'PrognosticsController@showView');
+
+Route::get('/contact', 'ContactUsController@showView');
+
+Route::post('/contact', 'ContactUsController@sendForm');
