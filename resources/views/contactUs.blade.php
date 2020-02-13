@@ -16,19 +16,19 @@
                     @csrf
                     <div class="form-group row">
                         <label class="col" for="lastname">Nom :</label>
-                        <input type="text" class="form-control col-sm-10" id="lastname" name="lastname" value="gdd" placeholder="Votre nom...">
+                        <input type="text" class="form-control col-sm-10" id="lastname" name="lastname" placeholder="Votre nom...">
                     </div>
                     <div class="form-group row">
                         <label class="col" for="name">Prénom :</label>
-                        <input type="text" class="form-control col-sm-10" id="name" name="firstname" value="dhgfhdshj" placeholder="Votre prénom...">
+                        <input type="text" class="form-control col-sm-10" id="name" name="firstname" placeholder="Votre prénom...">
                     </div>
                     <div class="form-group row">
                         <label class="col" for="email">Email :</label>
-                        <input type="email" class="form-control col-sm-10" id="email" value="ndsjhjhdfshf@ghdhhjd" name="email" placeholder="Votre email...">
+                        <input type="email" class="form-control col-sm-10" id="email" name="email" placeholder="Votre email...">
                     </div>
                     <div class="form-group row">
                         <label class="col" for="subject">Sujet :</label>
-                        <input type="text" class="form-control col-sm-10" id="subject" value="bdsbdjdf" name="subject" placeholder="Le sujet de votre message...">
+                        <input type="text" class="form-control col-sm-10" id="subject" name="subject" placeholder="Le sujet de votre message...">
                     </div>
                     <div class="form-group textarea">
                         <label for="content">Message :</label>
