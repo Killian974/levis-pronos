@@ -3,7 +3,7 @@
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  background-color: #707070;
+  background-color: black;
   position: absolute;
   margin-top: 5%;
   text-align: center;
@@ -16,7 +16,7 @@
 .linkContainer a {
   font-size: 18px;
   text-decoration: none;
-  color: black;
+  color: white;
   margin: 0 2%;
 }
 
