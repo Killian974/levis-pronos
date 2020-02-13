@@ -36,17 +36,18 @@ p {
   text-align: center;
   border: none;
   box-shadow: 5px 4px 10px 5px rgba(218, 218, 218, 0.8);
+  transition: 0.3s;
 }
 
 .hp-card:hover {
   transform: translateY(-10px);
-  box-shadow: 5px 4px 10px 5px rgba(230, 163, 30, 0.5);
+  box-shadow: 5px 4px 10px 10px rgba(218, 218, 218, 0.8);
   transition: 0.3s;
   cursor: pointer;
 }
 
 .hp-card-img {
-  width: 30%;
+  width: 30% !important;
   margin: 5% auto 0 auto;
   border-radius: 100%;
 }
@@ -61,21 +62,27 @@ p {
   text-align: center;
 }
 
+.hp-newsletter * {
+  margin: 0.5% auto;
+}
+
 .newsletterText {
   color: white;
   font-weight: bold;
   font-size: 22px;
   white-space: nowrap;
-  padding-top: 10px;
+}
+
+.newsletterButton {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .newsletterInput {
+  width: 60%;
   border-radius: 25px;
   border: 1px solid #e6a31e;
-}
-
-.newsletterInput:target {
-  border: none;
 }
 
 .newsletterBg {
@@ -153,6 +160,10 @@ p {
     flex-direction: column;
   }
 
+  .newsletterBg {
+    height: 45%;
+  }
+
   .newsletterInput {
     margin-bottom: 4%;
   }
@@ -173,6 +184,18 @@ p {
 @media screen and (max-width: 600px) {
   .carousel {
     width: 75%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .newsletterBg {
+    height: 35%;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .newsletterBg {
+    height: 25%;
   }
 }
 
