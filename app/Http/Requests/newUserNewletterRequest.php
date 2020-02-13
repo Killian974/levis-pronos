@@ -17,7 +17,7 @@ class newUserNewletterRequest extends FormRequest
     }
 
     /**
-     * Get the validation rules that apply to the request.
+     * Contrôle de l'email envoyer par l'utilisateur qui s'inscrit à notre newsletter
      *
      * @return array
      */

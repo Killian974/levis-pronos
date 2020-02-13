@@ -11,20 +11,29 @@
 |
 */
 
-use App\Mail\MailtrapExample;
+use App\Mail\mailAdmin;
 use Illuminate\Support\Facades\Mail;
 
 Route::get('/welcome', function () {
     return view('welcome');
 });
-
+/**
+ * Route de l'index + post envoyant les deux emails
+ */
 Route::get('/', 'IndexController@test');
 Route::post('/', 'IndexController@sendMail');
 
-
-
+/**
+ * Route vers la page de présentation de l'équipe
+ */
 Route::get('/qui-sommes-nous', 'PresentationController@test');
 
+/**
+ * Route menant aux pronostiques
+ */
 Route::get('/nos-pronostiques', 'PrognosticsController@test');
 
+/**
+ * Route page contact
+ */
 Route::get('/nous-contactez', 'ContactUsController@test');

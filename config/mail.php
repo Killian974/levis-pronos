@@ -1,4 +1,8 @@
 <?php
+
+/**
+ * Config mailtrap
+ */
 return [
     "driver" => "smtp",
     "host" => "smtp.mailtrap.io",

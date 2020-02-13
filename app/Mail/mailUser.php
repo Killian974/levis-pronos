@@ -2,12 +2,13 @@
 
 namespace App\Mail;
 
+use App\Http\Requests\newUserNewletterRequest;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 
-class MailtrapExample extends Mailable
+class mailUser extends Mailable
 {
     use Queueable, SerializesModels;
 
@@ -26,14 +27,14 @@ class MailtrapExample extends Mailable
      *
      * @return $this
      */
-    public function build()
+    public function build(newUserNewletterRequest $request)
     {
-        return $this->from('mail@example.com', 'Mailtrap')
-            ->subject('Mailtrap Confirmation')
-            ->markdown('mails.exmpl')
+        $emailNewUser = $request->input('email');
+        return $this->from($emailNewUser)
+            ->subject("Nos derniers pronostiques ! LEVIS PRONOS")
+            ->markdown('mails.mailForUser')
             ->with([
-                'name' => 'New Mailtrap User',
-                'link' => 'https://mailtrap.io/inboxes'
+                'email' => $emailNewUser
             ]);
     }
 }
