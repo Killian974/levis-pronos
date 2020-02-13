@@ -1,0 +1,26 @@
+.navbar {
+  display: none !important;
+}
+
+.footerContainer {
+  display: none;
+}
+
+.successContainer {
+  height: 100vh;
+  background-color: #28a745;
+  text-align: center;
+}
+
+.content {
+  transform: translateY(25%);
+}
+
+img {
+  width: 60vh;
+}
+
+h2 {
+  color: white;
+}
+

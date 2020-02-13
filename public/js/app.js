@@ -19372,10 +19372,21 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 /***/ }),
 
+/***/ "./resources/sass/validation.scss":
+/*!****************************************!*\
+  !*** ./resources/sass/validation.scss ***!
+  \****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
 /***/ 0:
-/*!*************************************************************************************************************************************************************************************!*\
-  !*** multi ./resources/js/app.js ./resources/sass/app.scss ./resources/sass/homePage.scss ./resources/sass/footer.scss ./resources/sass/aboutUs.scss ./resources/sass/contact.scss ***!
-  \*************************************************************************************************************************************************************************************/
+/*!**********************************************************************************************************************************************************************************************************************!*\
+  !*** multi ./resources/js/app.js ./resources/sass/app.scss ./resources/sass/homePage.scss ./resources/sass/footer.scss ./resources/sass/aboutUs.scss ./resources/sass/contact.scss ./resources/sass/validation.scss ***!
+  \**********************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -19384,7 +19395,8 @@ __webpack_require__(/*! C:\Users\weap5\Desktop\levis-pronos\resources\sass\app.s
 __webpack_require__(/*! C:\Users\weap5\Desktop\levis-pronos\resources\sass\homePage.scss */"./resources/sass/homePage.scss");
 __webpack_require__(/*! C:\Users\weap5\Desktop\levis-pronos\resources\sass\footer.scss */"./resources/sass/footer.scss");
 __webpack_require__(/*! C:\Users\weap5\Desktop\levis-pronos\resources\sass\aboutUs.scss */"./resources/sass/aboutUs.scss");
-module.exports = __webpack_require__(/*! C:\Users\weap5\Desktop\levis-pronos\resources\sass\contact.scss */"./resources/sass/contact.scss");
+__webpack_require__(/*! C:\Users\weap5\Desktop\levis-pronos\resources\sass\contact.scss */"./resources/sass/contact.scss");
+module.exports = __webpack_require__(/*! C:\Users\weap5\Desktop\levis-pronos\resources\sass\validation.scss */"./resources/sass/validation.scss");
 
 
 /***/ })
