@@ -2,6 +2,8 @@
 
 @section('title', 'Accueil')
 
+<link rel="stylesheet" type="text/css" href="{{ asset('css/homePage.css') }}">
+
 @section('content')
 <div class="hp-topContainer">
   <div>

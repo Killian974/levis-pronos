@@ -10,7 +10,7 @@ use Illuminate\Http\Request;
 
 class IndexController extends Controller
 {
-    public function test(){
+    public function showView(){
         return view('index');
     }
 

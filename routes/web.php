@@ -20,20 +20,21 @@ Route::get('/welcome', function () {
 /**
  * Route de l'index + post envoyant les deux emails
  */
-Route::get('/', 'IndexController@test');
+Route::get('/', 'IndexController@showView');
 Route::post('/', 'IndexController@sendMail');
 
 /**
  * Route vers la page de présentation de l'équipe
  */
-Route::get('/qui-sommes-nous', 'PresentationController@test');
+Route::get('/qui-sommes-nous', 'PresentationController@showView');
 
 /**
  * Route menant aux pronostiques
  */
-Route::get('/nos-pronostiques', 'PrognosticsController@test');
+Route::get('/pronostiques', 'PrognosticsController@showView');
 
 /**
  * Route page contact
  */
-Route::get('/nous-contactez', 'ContactUsController@test');
+Route::get('/contact', 'ContactUsController@showView');
+Route::post('/contact', 'ContactUsController@sendForm');

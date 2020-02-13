@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 class PresentationController extends Controller
 {
-    public function test(){
+    public function showView(){
         return view('presentation');
     }
 }

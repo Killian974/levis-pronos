@@ -1,0 +1,27 @@
+.footerContainer {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: #707070;
+  position: absolute;
+  margin-top: 5%;
+  text-align: center;
+}
+
+.footerContainer > * {
+  margin: 2% 0;
+}
+
+.linkContainer a {
+  font-size: 18px;
+  text-decoration: none;
+  color: black;
+  margin: 0 2%;
+}
+
+.networkImg {
+  width: 50px;
+  margin: 0 2%;
+}
+
