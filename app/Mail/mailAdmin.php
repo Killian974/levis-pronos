@@ -3,6 +3,7 @@
 namespace App\Mail;
 
 use App\Http\Requests\newUserNewletterRequest;
+use App\Object\Message;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
@@ -27,6 +28,7 @@ class mailAdmin extends Mailable
      *
      * @return $this
      */
+
     public function build(newUserNewletterRequest $request)
     {
         $emailNewUser = $request->input('email');

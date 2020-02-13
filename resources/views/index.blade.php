@@ -48,7 +48,6 @@
       <p class="col newsletterText">Recevez nos derniers pronostiques : </p>
         <form method="POST">
             @csrf
-
             <input type="email" id="email" name="email" class="col newsletterInput" placeholder="Votre Email..." required/>
             <button type="submit">Ok</button>
         </form>
