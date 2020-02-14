@@ -24,7 +24,7 @@ class newUserNewletterRequest extends FormRequest
     public function rules()
     {
         return [
-            'email' => 'required|email'
+            'email' => 'required|email|regex:/^([\w\.]+)@((?:[\w]+\.)+)([a-zA-Z]{2,4})/i'
         ];
     }
 }

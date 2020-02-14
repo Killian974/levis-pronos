@@ -51,11 +51,10 @@
 </div>
 
 <script>
-    function loading() {
-        let loader = document.getElementsByClassName('spinner-border')
-        let button = document.getElementsByClassName('btn-success')
-        loader[0].style.display = 'block'
-        button[0].style.display = 'none'
+    let loader = document.getElementsByClassName('spinner-border')
+    let button = document.getElementsByClassName('btn-success')
+    loader[0].style.display = 'block'
+    button[0].style.display = 'none'
     }
 </script>
 @endSection
