@@ -6,6 +6,7 @@ use App\Http\Requests\newMessageContactRequest;
 use App\Mail\mailAdminContact;
 use App\Mail\mailUserContact;
 use App\Object\Message;
+use http\Exception;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 use phpDocumentor\Reflection\Types\Object_;
@@ -28,9 +29,14 @@ class ContactUsController extends Controller
     }
 
     public function sendForm(newMessageContactRequest $request){
-        $message = $this->createMessageObject($request);
-        Mail::to('levis.pronos@gmail.com')->send(new mailAdminContact($message));
-        Mail::to('test@gamial.com')->send(new mailUserContact($message));
-        return view('validation');
+        try {
+            $message = $this->createMessageObject($request);
+            Mail::to('levis.pronos@gmail.com')->send(new mailAdminContact($message));
+            Mail::to('test@gamial.com')->send(new mailUserContact($message));
+            return view('validation');
+        } catch (Exception $e) {
+            report($e);
+            return false;
+        }
     }
 }
