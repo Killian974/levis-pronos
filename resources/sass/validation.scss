@@ -17,9 +17,15 @@
 }
 
 img {
-    width: 60vh;
+    width: 25vw;
 }
 
 h2 {
-    color: white;;
+    color: white;
+}
+
+@media screen and (max-width: 599px) {
+    .content {
+        transform: translateY(75%);
+    }
 }
