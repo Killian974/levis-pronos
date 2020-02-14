@@ -27,7 +27,7 @@ class newMessageContactRequest extends FormRequest
         return [
             'lastname' => 'required|string',
             'firstname' => 'required|string',
-            'email' => 'required|email|regex:/^([\w-\.]+)@((?:[\w]+\.)+)([a-zA-Z]{2,4})/i',
+            'email' => 'required|email|regex:/^([\w\.]+)@((?:[\w]+\.)+)([a-zA-Z]{2,4})/i',
             'subject' => 'required|string',
             'content' => 'required|string',
         ];
