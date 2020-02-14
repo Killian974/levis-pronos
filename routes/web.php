@@ -38,3 +38,9 @@ Route::get('/pronostiques', 'PrognosticsController@showView');
  */
 Route::get('/contact', 'ContactUsController@showView');
 Route::post('/contact', 'ContactUsController@sendForm');
+
+
+/**
+ * Route page validation
+ */
+Route::get('/success', 'ValidationController@showView');
