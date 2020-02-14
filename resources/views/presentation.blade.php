@@ -2,7 +2,9 @@
 
 @section('title', 'Qui-sommes-nous')
 
+@push('style')
 <link rel="stylesheet" type="text/css" href="{{ asset('css/aboutUs.css') }}">
+@endpush
 
 @section('content')
 
