@@ -156,118 +156,289 @@
         </li>
     </ul>
     <div class="tab-content" id="myTabContent">
+{{--        Section Football--}}
         <div class="tab-pane fade show active" id="football" role="tabpanel" aria-labelledby="home-tab">
-
-            <div class="card text-white bg-success mb-3" style="">
-                <div class="card-header">01/02/2020</div>
-                <div class="card-body">
-                    <p class="card-text">FC LORIENT - LE MANS </p>
-                    <p class="card-text">Pronostique : FC LORIENT </p>
-                    <p class="card-text">Cote :  2.15</p>
+            <div class="container" style="margin-top: 2%;">
+                <div class="row">
+                    <div class="col">
+                        <div class="card text-white bg-success mb-3" style="">
+                            <div class="card-header">01/01/2020</div>
+                            <div class="card-body">
+                                <p class="card-text">FC LORIENT - LE MANS </p>
+                                <p class="card-text">Pronostique : FC LORIENT </p>
+                                <p class="card-text">Cote :  2.15</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card text-white bg-success mb-3" style="">
+                            <div class="card-header">09/01/2020</div>
+                            <div class="card-body">
+                                <p class="card-text">FC Nantes - Amiens </p>
+                                <p class="card-text">Pronostique : FC Nantes </p>
+                                <p class="card-text">Cote :  1.95</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="card text-white bg-warning mb-3" style="">
+                            <div class="card-header">10/12/2019</div>
+                            <div class="card-body">
+                                <p class="card-text">Marseille - Angers</p>
+                                <p class="card-text">Pronostique : Marseille </p>
+                                <p class="card-text">Cote :  1.60</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card text-white bg-success mb-3" style="">
+                            <div class="card-header">10/12/2019</div>
+                            <div class="card-body">
+                                <p class="card-text">FC Nantes - Brest </p>
+                                <p class="card-text">Pronostique : FC Nantes </p>
+                                <p class="card-text">Cote :  1.55</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="card text-white bg-success mb-3" style="">
+                            <div class="card-header">10/12/2019</div>
+                            <div class="card-body">
+                                <p class="card-text">Marseille - Angers</p>
+                                <p class="card-text">Pronostique : Marseille </p>
+                                <p class="card-text">Cote :  1.60</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card text-white bg-success mb-3" style="">
+                            <div class="card-header">10/12/2019</div>
+                            <div class="card-body">
+                                <p class="card-text">FC Nantes - Brest </p>
+                                <p class="card-text">Pronostique : FC Nantes </p>
+                                <p class="card-text">Cote :  1.55</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="card text-white bg-success mb-3" style="">
+                            <div class="card-header">10/12/2019</div>
+                            <div class="card-body">
+                                <p class="card-text">Marseille - Angers</p>
+                                <p class="card-text">Pronostique : Marseille </p>
+                                <p class="card-text">Cote :  1.60</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card text-white bg-warning mb-3" style="">
+                            <div class="card-header">10/12/2019</div>
+                            <div class="card-body">
+                                <p class="card-text">FC Nantes - Brest </p>
+                                <p class="card-text">Pronostique : FC Nantes </p>
+                                <p class="card-text">Cote :  1.55</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="card text-white bg-warning  mb-3" style="">
-                <div class="card-header">01/02/2020</div>
-                <div class="card-body">
-                    <p class="card-text">FC LORIENT - LE MANS </p>
-                    <p class="card-text">Pronostique : FC LORIENT </p>
-                    <p class="card-text">Cote :  2.15</p>
-                </div>
-            </div>
-            <div class="card text-white bg-success mb-3" style="">
-                <div class="card-header">01/02/2020</div>
-                <div class="card-body">
-                    <p class="card-text">FC LORIENT - LE MANS </p>
-                    <p class="card-text">Pronostique : FC LORIENT </p>
-                    <p class="card-text">Cote :  2.15</p>
-                </div>
-            </div>
-
-            <div class="card text-white bg-success mb-3" style="">
-                <div class="card-header">01/02/2020</div>
-                <div class="card-body">
-                    <p class="card-text">FC LORIENT - LE MANS </p>
-                    <p class="card-text">Pronostique : FC LORIENT </p>
-                    <p class="card-text">Cote :  2.15</p>
-                </div>
-            </div>
-
         </div>
+{{--Section Basket--}}
         <div class="tab-pane fade" id="basket" role="tabpanel" aria-labelledby="basket-tab">
-            <div class="container">
-            <div class="row">
-                <div class="col">
-
-                    <div class="card text-white bg-success mb-3" style="">
-                        <div class="card-header">01/02/2020</div>
-                        <div class="card-body">
-                            <p class="card-text">FC LORIENT - LE MANS </p>
-                            <p class="card-text">Pronostique : FC LORIENT </p>
-                            <p class="card-text">Cote :  2.15</p>
+            <div class="container" style="margin-top: 2%;">
+                <div class="row">
+                    <div class="col">
+                        <div class="card text-white bg-warning mb-3" style="">
+                            <div class="card-header">01/01/2020</div>
+                            <div class="card-body">
+                                <p class="card-text">FC LORIENT - LE MANS </p>
+                                <p class="card-text">Pronostique : FC LORIENT </p>
+                                <p class="card-text">Cote :  2.15</p>
+                            </div>
                         </div>
                     </div>
-
-                </div>
-                <div class="col">
-                    <div class="card text-white bg-success mb-3" style="">
-                        <div class="card-header">01/02/2020</div>
-                        <div class="card-body">
-                            <p class="card-text">FC LORIENT - LE MANS </p>
-                            <p class="card-text">Pronostique : FC LORIENT </p>
-                            <p class="card-text">Cote :  2.15</p>
-                        </div>
-                    </div>
-                </div>
-            </div>            <div class="row">
-                <div class="col">
-
-                    <div class="card text-white bg-success mb-3" style="">
-                        <div class="card-header">01/02/2020</div>
-                        <div class="card-body">
-                            <p class="card-text">FC LORIENT - LE MANS </p>
-                            <p class="card-text">Pronostique : FC LORIENT </p>
-                            <p class="card-text">Cote :  2.15</p>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="col">
-                    <div class="card text-white bg-success mb-3" style="">
-                        <div class="card-header">01/02/2020</div>
-                        <div class="card-body">
-                            <p class="card-text">FC LORIENT - LE MANS </p>
-                            <p class="card-text">Pronostique : FC LORIENT </p>
-                            <p class="card-text">Cote :  2.15</p>
+                    <div class="col">
+                        <div class="card text-white bg-success mb-3" style="">
+                            <div class="card-header">09/01/2020</div>
+                            <div class="card-body">
+                                <p class="card-text">FC Nantes - Amiens </p>
+                                <p class="card-text">Pronostique : FC Nantes </p>
+                                <p class="card-text">Cote :  1.95</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>            <div class="row">
-                <div class="col">
-
-                    <div class="card text-white bg-success mb-3" style="">
-                        <div class="card-header">01/02/2020</div>
-                        <div class="card-body">
-                            <p class="card-text">FC LORIENT - LE MANS </p>
-                            <p class="card-text">Pronostique : FC LORIENT </p>
-                            <p class="card-text">Cote :  2.15</p>
+                <div class="row">
+                    <div class="col">
+                        <div class="card text-white bg-success mb-3" style="">
+                            <div class="card-header">10/12/2019</div>
+                            <div class="card-body">
+                                <p class="card-text">Marseille - Angers</p>
+                                <p class="card-text">Pronostique : Marseille </p>
+                                <p class="card-text">Cote :  1.60</p>
+                            </div>
                         </div>
                     </div>
-
-                </div>
-                <div class="col">
-                    <div class="card text-white bg-success mb-3" style="">
-                        <div class="card-header">01/02/2020</div>
-                        <div class="card-body">
-                            <p class="card-text">FC LORIENT - LE MANS </p>
-                            <p class="card-text">Pronostique : FC LORIENT </p>
-                            <p class="card-text">Cote :  2.15</p>
+                    <div class="col">
+                        <div class="card text-white bg-success mb-3" style="">
+                            <div class="card-header">10/12/2019</div>
+                            <div class="card-body">
+                                <p class="card-text">FC Nantes - Brest </p>
+                                <p class="card-text">Pronostique : FC Nantes </p>
+                                <p class="card-text">Cote :  1.55</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="card text-white bg-success mb-3" style="">
+                            <div class="card-header">10/12/2019</div>
+                            <div class="card-body">
+                                <p class="card-text">Marseille - Angers</p>
+                                <p class="card-text">Pronostique : Marseille </p>
+                                <p class="card-text">Cote :  1.60</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card text-white bg-success mb-3" style="">
+                            <div class="card-header">10/12/2019</div>
+                            <div class="card-body">
+                                <p class="card-text">FC Nantes - Brest </p>
+                                <p class="card-text">Pronostique : FC Nantes </p>
+                                <p class="card-text">Cote :  1.55</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="card text-white bg-success mb-3" style="">
+                            <div class="card-header">10/12/2019</div>
+                            <div class="card-body">
+                                <p class="card-text">Marseille - Angers</p>
+                                <p class="card-text">Pronostique : Marseille </p>
+                                <p class="card-text">Cote :  1.60</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card text-white bg-warning mb-3" style="">
+                            <div class="card-header">10/12/2019</div>
+                            <div class="card-body">
+                                <p class="card-text">FC Nantes - Brest </p>
+                                <p class="card-text">Pronostique : FC Nantes </p>
+                                <p class="card-text">Cote :  1.55</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="tab-pane fade" id="tennis" role="tabpanel" aria-labelledby="tennis-tab">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa..</div>
+{{--        Section Tennis--}}
+        <div class="tab-pane fade" id="tennis" role="tabpanel" aria-labelledby="tennis-tab">
+            <div class="container" style="margin-top: 2%;">
+                <div class="row">
+                    <div class="col">
+                        <div class="card text-white bg-success mb-3" style="">
+                            <div class="card-header">01/01/2020</div>
+                            <div class="card-body">
+                                <p class="card-text">FC LORIENT - LE MANS </p>
+                                <p class="card-text">Pronostique : FC LORIENT </p>
+                                <p class="card-text">Cote :  2.15</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card text-white bg-success mb-3" style="">
+                            <div class="card-header">09/01/2020</div>
+                            <div class="card-body">
+                                <p class="card-text">FC Nantes - Amiens </p>
+                                <p class="card-text">Pronostique : FC Nantes </p>
+                                <p class="card-text">Cote :  1.95</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="card text-white bg-success mb-3" style="">
+                            <div class="card-header">10/12/2019</div>
+                            <div class="card-body">
+                                <p class="card-text">Marseille - Angers</p>
+                                <p class="card-text">Pronostique : Marseille </p>
+                                <p class="card-text">Cote :  1.60</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card text-white bg-success mb-3" style="">
+                            <div class="card-header">10/12/2019</div>
+                            <div class="card-body">
+                                <p class="card-text">FC Nantes - Brest </p>
+                                <p class="card-text">Pronostique : FC Nantes </p>
+                                <p class="card-text">Cote :  1.55</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <div class="card text-white bg-success mb-3" style="">
+                            <div class="card-header">10/12/2019</div>
+                            <div class="card-body">
+                                <p class="card-text">Marseille - Angers</p>
+                                <p class="card-text">Pronostique : Marseille </p>
+                                <p class="card-text">Cote :  1.60</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card text-white bg-success mb-3" style="">
+                            <div class="card-header">10/12/2019</div>
+                            <div class="card-body">
+                                <p class="card-text">FC Nantes - Brest </p>
+                                <p class="card-text">Pronostique : FC Nantes </p>
+                                <p class="card-text">Cote :  1.55</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col">
+                        <div class="card text-white bg-success mb-3" style="">
+                            <div class="card-header">10/12/2019</div>
+                            <div class="card-body">
+                                <p class="card-text">Marseille - Angers</p>
+                                <p class="card-text">Pronostique : Marseille </p>
+                                <p class="card-text">Cote :  1.60</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card text-white bg-warning mb-3" style="">
+                            <div class="card-header">10/12/2019</div>
+                            <div class="card-body">
+                                <p class="card-text">FC Nantes - Brest </p>
+                                <p class="card-text">Pronostique : FC Nantes </p>
+                                <p class="card-text">Cote :  1.55</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </div>
 @endsection
 
