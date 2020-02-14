@@ -1,0 +1,32 @@
+.navbar {
+  display: none !important;
+}
+
+.footerContainer {
+  display: none;
+}
+
+.successContainer {
+  height: 100vh;
+  background-color: #28a745;
+  text-align: center;
+}
+
+.content {
+  transform: translateY(25%);
+}
+
+img {
+  width: 25vw;
+}
+
+h2 {
+  color: white;
+}
+
+@media screen and (max-width: 599px) {
+  .content {
+    transform: translateY(75%);
+  }
+}
+
