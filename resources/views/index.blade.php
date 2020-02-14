@@ -50,10 +50,10 @@
       <p class="newsletterText">Recevez nos derniers pronostiques : </p>
         <form method="POST">
             @csrf
-
             <input type="email" id="email" name="email" class="newsletterInput" placeholder="Votre Email..." required/>
+            <button type="submit" class="newsletterButton btn btn-success">S'inscire</button>
         </form>
-        <button type="submit" class="newsletterButton btn btn-success">S'inscire</button>
+
 </div>
     <div class="hp-review">
       <h2>Levis prono vu par vous...</h2>
