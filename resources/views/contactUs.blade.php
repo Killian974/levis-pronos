@@ -36,12 +36,24 @@
                     </div>
                     <div class="form-group">
                         <div >
-                          <button type="submit" class="btn btn-success formButton">Envoyer votre message</button>
+                          <button type="submit" onclick="loading()" class="btn btn-success formButton">Envoyer votre message</button>
                         </div>
+                            <div class="spinner-border text-success" style="display: none; width: 75px; height: 75px" role="status">
+                            <span class="sr-only">Loading...</span>
+                          </div>
                     </div>
                 </form>
             </div>
         </div>
     </div>
 </div>
+
+<script>
+    function loading() {
+        let loader = document.getElementsByClassName('spinner-border')
+        let button = document.getElementsByClassName('btn-success')
+        loader[0].style.display = 'block'
+        button[0].style.display = 'none'
+    }
+</script>
 @endSection
