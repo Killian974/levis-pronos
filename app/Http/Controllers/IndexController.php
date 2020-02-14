@@ -20,6 +20,6 @@ class IndexController extends Controller
         $emailNewUserEmail  = $request->input('email');
         Mail::to('levis.pronos@gmail.com')->send(new mailAdmin());
         Mail::to($emailNewUserEmail)->send(new mailUser());
-        return 'A message has been sent to Mailtrap!';
+        return view('validation');
     }
 }

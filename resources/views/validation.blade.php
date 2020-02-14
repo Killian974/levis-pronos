@@ -1,6 +1,6 @@
 @extends('layout.pageDefault')
 
-@section('title', 'success')
+@section('title', 'Demande envoyée')
 
 <link rel="stylesheet" type="text/css" href="{{ asset('css/validation.css') }}">
 
@@ -11,4 +11,10 @@
         <h2>Votre demande a bien été transmise à notre équipe!</h2>
     </div>
 </div>
+
+<script>
+
+    setTimeout(function(){ document.location.href = '/' }, 2500);
+
+</script>
 @endSection

@@ -31,6 +31,6 @@ class ContactUsController extends Controller
         $message = $this->createMessageObject($request);
         Mail::to('levis.pronos@gmail.com')->send(new mailAdminContact($message));
         Mail::to('test@gamial.com')->send(new mailUserContact($message));
-        return 'A message has been sent to Mailtrap!';
+        return view('validation');
     }
 }
