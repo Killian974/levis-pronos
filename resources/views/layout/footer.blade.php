@@ -1,5 +1,3 @@
-<link rel="stylesheet" type="text/css" href="{{ asset('css/footer.css') }}">
-
 <div class="footerContainer">
     <div class="linkContainer">
         <a href="/" >Accueil</a>

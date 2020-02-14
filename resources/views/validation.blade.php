@@ -2,7 +2,9 @@
 
 @section('title', 'Demande envoyée')
 
+@push('style')
 <link rel="stylesheet" type="text/css" href="{{ asset('css/validation.css') }}">
+@endpush
 
 @section('content')
 <div class="successContainer">

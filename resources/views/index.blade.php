@@ -2,7 +2,9 @@
 
 @section('title', 'Accueil')
 
+@push('style')
 <link rel="stylesheet" type="text/css" href="{{ asset('css/homePage.css') }}">
+@endpush
 
 @section('content')
 <div class="hp-topContainer">

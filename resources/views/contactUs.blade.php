@@ -2,7 +2,9 @@
 
 @section('title', 'Contact')
 
+@push('style')
 <link rel="stylesheet" type="text/css" href="{{ asset('css/contact.css') }}">
+@endpush
 
 @section('content')
 <div class="contactContainer">
