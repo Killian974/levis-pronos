@@ -14,7 +14,7 @@
 
 <script>
 
-    setTimeout(function(){ document.location.href = '/' }, 2500);
+    setTimeout(function(){ document.location.href = '/' }, 1500);
 
 </script>
 @endSection
