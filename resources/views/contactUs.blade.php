@@ -12,31 +12,33 @@
         <div class="card-body">
             <h2 class="card-title">Formulaire de contact</h2>
             <div class="form">
-                <form>
+                <form method="POST" >
+                    @csrf
                     <div class="form-group row">
-                        <label class="col" for="lastnameInput">Nom :</label>
-                        <input type="text" class="form-control col-sm-10" id="lastnameInput" placeholder="Votre nom...">
+                        <label class="col" for="lastname">Nom :</label>
+                        <input type="text" class="form-control col-sm-10" id="lastname" name="lastname" placeholder="Votre nom...">
                     </div>
                     <div class="form-group row">
-                        <label class="col" for="nameInput">Prénom :</label>
-                        <input type="text" class="form-control col-sm-10" id="nameInput" placeholder="Votre prénom...">
+                        <label class="col" for="name">Prénom :</label>
+                        <input type="text" class="form-control col-sm-10" id="name" name="firstname" placeholder="Votre prénom...">
                     </div>
                     <div class="form-group row">
-                        <label class="col" for="mailInput">Email :</label>
-                        <input type="email" class="form-control col-sm-10" id="mailInput" placeholder="Votre email...">
+                        <label class="col" for="email">Email :</label>
+                        <input type="email" class="form-control col-sm-10" id="email" name="email" placeholder="Votre email...">
                     </div>
                     <div class="form-group row">
-                        <label class="col" for="subjectInput">Sujet :</label>
-                        <input type="text" class="form-control col-sm-10" id="subjectInput" placeholder="Le sujet de votre message...">
+                        <label class="col" for="subject">Sujet :</label>
+                        <input type="text" class="form-control col-sm-10" id="subject" name="subject" placeholder="Le sujet de votre message...">
                     </div>
                     <div class="form-group textarea">
-                        <label for="contentInput">Message :</label>
-                        <textarea class="form-control" id="contentInput" placeholder="Votre message..." rows="5"></textarea>
+                        <label for="content">Message :</label>
+                        <textarea class="form-control" id="content" name="content" placeholder="Votre message..." rows="5"></textarea>
                     </div>
                     <div class="form-group">
                         <div >
                           <button type="submit" class="btn btn-success formButton">Envoyer votre message</button>
                         </div>
+                    </div>
                 </form>
             </div>
         </div>
