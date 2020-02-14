@@ -16,6 +16,7 @@ class newMessageContactRequest extends FormRequest
         return true;
     }
 
+
     /**
      * Get the validation rules that apply to the request.
      *
@@ -24,7 +25,11 @@ class newMessageContactRequest extends FormRequest
     public function rules()
     {
         return [
-            //
+            'lastname' => 'required|string',
+            'firstname' => 'required|string',
+            'email' => 'required|email',
+            'subject' => 'required|string',
+            'content' => 'required|string',
         ];
     }
 }
