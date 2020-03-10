@@ -14,6 +14,7 @@ class Articles extends Model
     protected $table = 'articles';
 
     public $timestamps = false;
+
     protected $fillable = [
         'id', 'title', 'content', 'category', 'author', 'created_date'
     ];

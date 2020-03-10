@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests\newUserNewletterRequest;
 use App\Mail\mailAdmin;
 use App\Mail\mailUser;
+use App\Models\Articles;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Http\Request;
 
