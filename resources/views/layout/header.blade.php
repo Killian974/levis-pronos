@@ -20,6 +20,9 @@
             <li class="nav-item">
                 <a style="color:white;" class="nav-link" href="/contact">Nous contactez</a>
             </li>
+            <li class="nav-item">
+                <a style="color:white;" class="nav-link" href="/blog">Blog</a>
+            </li>
         </ul>
     </div>
 </nav>

@@ -1,0 +1,51 @@
+.titleContainer {
+  text-align: center;
+}
+
+.titleContainer > * {
+  margin: 3% 0;
+}
+
+.articleContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+a:hover {
+  text-decoration: none !important;
+}
+
+.item {
+  width: 28%;
+  margin: 1%;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 5px 4px 10px 10px rgba(218, 218, 218, 0.8);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.card-title {
+  color: #e6a31e;
+  word-break: keep-all;
+  overflow: hidden;
+}
+
+.card-text {
+  color: black;
+}
+
+.articleText {
+  margin-bottom: 5%;
+  max-height: 150px;
+  overflow: hidden;
+}
+
+.date {
+  font-size: 12px;
+}
+
