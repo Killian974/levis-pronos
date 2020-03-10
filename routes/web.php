@@ -49,3 +49,8 @@ Route::get('/success', 'ValidationController@showView');
  * Route blog page
  */
 Route::get('/blog', 'BlogController@showView');
+
+/**
+ * Route blog page
+ */
+Route::get('blog/article/{id}', 'ArticlePage@showView');
