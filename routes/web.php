@@ -12,7 +12,10 @@
 */
 
 use App\Mail\mailAdmin;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Mail;
+
+Auth::routes();
 
 Route::get('/welcome', function () {
     return view('welcome');
@@ -44,3 +47,7 @@ Route::post('/contact', 'ContactUsController@sendForm');
  * Route page validation
  */
 Route::get('/success', 'ValidationController@showView');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
