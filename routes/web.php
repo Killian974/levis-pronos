@@ -44,3 +44,8 @@ Route::post('/contact', 'ContactUsController@sendForm');
  * Route page validation
  */
 Route::get('/success', 'ValidationController@showView');
+
+/**
+ * Route blog page
+ */
+Route::get('/blog', 'BlogController@showView');
