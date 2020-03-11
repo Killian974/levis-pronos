@@ -21,7 +21,7 @@
                         <h2 class="card-title">{{ $article->title }}</h2>
                         <p class="dateAuthor">{{ $article->author }}</p>
                         <p class="card-text articleText">{{ $article->content }}</p>
-                        <a href="#" class="card-link">Lire l'article</a>
+                        <a href="/blog/article/{{{$article->id}}}" class="card-link">Lire l'article</a>
                         <p class="dateAuthor">{{ $article->created_date }}</p>
                         </div>
                     </div>
