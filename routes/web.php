@@ -30,12 +30,12 @@ Route::post('/', 'IndexController@sendMail');
  * Route vers la page de présentation de l'équipe
  */
 Route::get('/qui-sommes-nous', 'PresentationController@showView');
-
-/**
- * Route menant aux pronostiques
- */
-Route::get('/pronostiques', 'PrognosticsController@showView');
-
+Route::group(['middleware' => 'App\Http\Middleware\Admin'],function () {
+    /**
+     * Route menant aux pronostiques
+     */
+    Route::get('/pronostiques', 'PrognosticsController@showView');
+});
 /**
  * Route page contact
  */

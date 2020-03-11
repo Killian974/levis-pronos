@@ -3,5 +3,7 @@
 @section('title', 'Page Introuvable')
 @section('content')
     ERREUR 404
-    <h2>{{ $exception->getMessage() }}</h2>
+    @if($exeption ?? '')
+{{--    <h2>{{ $exception->getMessage() }}</h2>--}}
+    @endif
 @endsection

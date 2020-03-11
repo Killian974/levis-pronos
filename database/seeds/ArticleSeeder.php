@@ -20,5 +20,13 @@ class ArticleSeeder extends Seeder
             'author' => 'Admin',
             'created_date' => \Carbon\Carbon::now()
         ]);
+
+        DB::table('articles')->insert([
+            'title' => Str::random(30),
+            'content' => Str::random(500),
+            'category' => 'Test',
+            'author' => 'Admin',
+            'created_date' => \Carbon\Carbon::now()
+        ]);
     }
 }
