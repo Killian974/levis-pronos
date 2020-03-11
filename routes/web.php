@@ -47,7 +47,7 @@ Route::post('/contact', 'ContactUsController@sendForm');
  * Route page validation
  */
 Route::get('/success', 'ValidationController@showView');
+Route::get('/admin', 'AdminController@showView');
 
-Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
