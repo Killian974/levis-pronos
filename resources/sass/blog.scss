@@ -55,3 +55,15 @@ a:hover {
     font-size: 14px;
     color: black;
 }
+
+@media screen and (max-width: 760px) {
+    .item {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .item {
+        width: 85%;
+    }
+}

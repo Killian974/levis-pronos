@@ -1,0 +1,29 @@
+.articleContainer {
+  margin: 3% 5%;
+}
+
+.titleContainer {
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 2%;
+  word-break: break-all;
+  color: #e6a31e;
+}
+
+.articleImg {
+  width: 30%;
+  margin-right: 2%;
+  margin-bottom: 2%;
+  float: left;
+}
+
+.titleContainer > p {
+  color: #707070;
+}
+
+.contentContainer {
+  word-break: break-all;
+}
+

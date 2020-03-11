@@ -15,7 +15,7 @@
     <div class="articleContainer">
         @foreach($articles as $article)
             <div class="item">
-                <a href="#">
+            <a href="/blog/article/{{{$article->id}}}">
                     <div class="card">
                         <div class="card-body">
                         <h2 class="card-title">{{ $article->title }}</h2>

@@ -19339,6 +19339,17 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 /***/ }),
 
+/***/ "./resources/sass/article.scss":
+/*!*************************************!*\
+  !*** ./resources/sass/article.scss ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
 /***/ "./resources/sass/blog.scss":
 /*!**********************************!*\
   !*** ./resources/sass/blog.scss ***!
@@ -19395,9 +19406,9 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 /***/ }),
 
 /***/ 0:
-/*!*************************************************************************************************************************************************************************************************************************************************!*\
-  !*** multi ./resources/js/app.js ./resources/sass/app.scss ./resources/sass/homePage.scss ./resources/sass/footer.scss ./resources/sass/aboutUs.scss ./resources/sass/contact.scss ./resources/sass/validation.scss ./resources/sass/blog.scss ***!
-  \*************************************************************************************************************************************************************************************************************************************************/
+/*!*******************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** multi ./resources/js/app.js ./resources/sass/app.scss ./resources/sass/homePage.scss ./resources/sass/footer.scss ./resources/sass/aboutUs.scss ./resources/sass/contact.scss ./resources/sass/validation.scss ./resources/sass/blog.scss ./resources/sass/article.scss ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -19408,7 +19419,8 @@ __webpack_require__(/*! C:\Users\weap5\Desktop\levis-pronos\resources\sass\foote
 __webpack_require__(/*! C:\Users\weap5\Desktop\levis-pronos\resources\sass\aboutUs.scss */"./resources/sass/aboutUs.scss");
 __webpack_require__(/*! C:\Users\weap5\Desktop\levis-pronos\resources\sass\contact.scss */"./resources/sass/contact.scss");
 __webpack_require__(/*! C:\Users\weap5\Desktop\levis-pronos\resources\sass\validation.scss */"./resources/sass/validation.scss");
-module.exports = __webpack_require__(/*! C:\Users\weap5\Desktop\levis-pronos\resources\sass\blog.scss */"./resources/sass/blog.scss");
+__webpack_require__(/*! C:\Users\weap5\Desktop\levis-pronos\resources\sass\blog.scss */"./resources/sass/blog.scss");
+module.exports = __webpack_require__(/*! C:\Users\weap5\Desktop\levis-pronos\resources\sass\article.scss */"./resources/sass/article.scss");
 
 
 /***/ })

@@ -53,4 +53,4 @@ Route::get('/blog', 'BlogController@showView');
 /**
  * Route blog page
  */
-Route::get('blog/article/{id}', 'ArticlePage@showView');
+Route::get('blog/article/{id}', 'ArticlePage@showArticle');
