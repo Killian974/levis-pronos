@@ -20,3 +20,4 @@ mix.sass('resources/sass/contact.scss', 'public/css');
 mix.sass('resources/sass/validation.scss', 'public/css');
 mix.sass('resources/sass/blog.scss', 'public/css');
 mix.sass('resources/sass/article.scss', 'public/css');
+mix.sass('resources/sass/404.scss', 'public/css');
