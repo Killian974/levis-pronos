@@ -19,20 +19,26 @@ a:hover {
 
 .item {
   width: 28%;
-  margin: 1%;
+  margin: 2% 1%;
 }
 
-.card:hover {
+.item:hover {
+  cursor: pointer;
   transform: translateY(-10px);
   box-shadow: 5px 4px 10px 10px rgba(218, 218, 218, 0.8);
-  transition: 0.3s;
-  cursor: pointer;
+  transition: 0.8s;
+}
+
+.item:hover > .card .card-title {
+  overflow-wrap: unset;
 }
 
 .card-title {
+  font-size: 28px;
   color: #e6a31e;
-  word-break: keep-all;
+  overflow-wrap: initial;
   overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .card-text {
@@ -45,7 +51,20 @@ a:hover {
   overflow: hidden;
 }
 
-.date {
-  font-size: 12px;
+.dateAuthor {
+  font-size: 14px;
+  color: black;
+}
+
+@media screen and (max-width: 760px) {
+  .item {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .item {
+    width: 85%;
+  }
 }
 

@@ -13,18 +13,21 @@
         <p>Utque aegrum corpus quassari etiam levibus solet offensis, ita animus eius angustus.</p>
     </div>
     <div class="articleContainer">
-        <div class="item">
-            <a href="#">
-                <div class="card">
-                    <div class="card-body">
-                        <h2 class="card-title">Titre article</h2>
-                        <p class="card-text articleText">Contenu de l'article.Contenu de l'article.Contenu de l'article.Contenu de l'article.Contenu de l'article.Contenu de l'article.Contenu de l'article.Contenu de l'article.Contenu de l'article.Contenu de l'article.Contenu de l'article.</p>
-                        <a href="#" class="card-link">Lire l'article</a>
-                        <p class="date">xx/xx/xxx</p>
+        @foreach($articles as $article)
+            <div class="item">
+            <a href="/blog/article/{{{$article->id}}}">
+                    <div class="card">
+                        <div class="card-body">
+                        <h2 class="card-title">{{ $article->title }}</h2>
+                        <p class="dateAuthor">{{ $article->author }}</p>
+                        <p class="card-text articleText">{{ $article->content }}</p>
+                        <a href="/blog/article/{{{$article->id}}}" class="card-link">Lire l'article</a>
+                        <p class="dateAuthor">{{ $article->created_date }}</p>
+                        </div>
                     </div>
-                </div>
-            </a>
-        </div>
+                </a>
+            </div>
+        @endforeach
     </div>
 </div>
 
