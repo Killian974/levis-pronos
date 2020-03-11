@@ -1,7 +1,7 @@
 @extends('layout.pageDefault')
 
 @section('content')
-<div class="container">
+<div style="margin: 5% auto" class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
@@ -13,7 +13,7 @@
                             {{ session('status') }}
                         </div>
                     @endif
-                    You are logged in!
+                    Vous êtes connecté !
                 </div>
             </div>
         </div>
