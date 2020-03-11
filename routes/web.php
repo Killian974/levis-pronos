@@ -31,10 +31,7 @@ Route::post('/', 'IndexController@sendMail');
  */
 Route::get('/qui-sommes-nous', 'PresentationController@showView');
 Route::group(['middleware' => 'App\Http\Middleware\Admin'],function () {
-    /**
-     * Route menant aux pronostiques
-     */
-    Route::get('/pronostiques', 'PrognosticsController@showView');
+
 });
 /**
  * Route page contact
@@ -42,12 +39,20 @@ Route::group(['middleware' => 'App\Http\Middleware\Admin'],function () {
 Route::get('/contact', 'ContactUsController@showView');
 Route::post('/contact', 'ContactUsController@sendForm');
 
+/**
+ * Route menant aux pronostiques
+ */
+Route::get('/pronostiques', 'PrognosticsController@showView');
 
 /**
  * Route page validation
  */
 Route::get('/success', 'ValidationController@showView');
+
 Route::get('/admin', 'AdminController@showView');
+Route::post('admin-add-pronos', 'AdminController@addPronos');
+Route::post('admin-add-article', 'AdminController@addArticle');
 
 
 Route::get('/home', 'HomeController@index')->name('home');
+
