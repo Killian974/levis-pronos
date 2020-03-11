@@ -1,0 +1,17 @@
+.footerContainer {
+  display: none;
+}
+
+.errorContainer {
+  height: 100vh;
+  text-align: center;
+}
+
+h1 {
+  font-size: 15rem;
+  background: #9e0000;
+  background: linear-gradient(0deg, #9e0000 5%, #ff3b3b 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
