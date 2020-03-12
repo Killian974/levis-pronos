@@ -1,10 +1,3 @@
-<style>
-    a{
-        text-decoration: none;
-        color: white;
-    }
-</style>
-
 <nav class="navbar navbar-expand-lg" style="background: black;">
     <a style="color:white;" class="navbar-brand" href="/">
         <img src="https://www.thegoldteamny.com/wp-content/uploads/sites/294/2019/06/logo.png" width="30" height="30" alt="">
@@ -19,28 +12,28 @@
                 <a style="color:white;" class="nav-link" href="/">Accueil <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a style="color:white;" class="nav-link" href="/qui-sommes-nous">Qui-sommes nous ?</a>
+                <a style="color:white;" class="nav-link" href="qui-sommes-nous">Qui-sommes nous ?</a>
             </li>
             <li class="nav-item">
-                <a style="color:white;" class="nav-link" href="/pronostiques">Nos pronostiques</a>
+                <a style="color:white;" class="nav-link" href="pronostiques">Nos pronostiques</a>
             </li>
             <li class="nav-item">
-                <a style="color:white;" class="nav-link" href="/contact">Nous contactez</a>
+                <a style="color:white;" class="nav-link" href="contact">Nous contactez</a>
             </li>
 
             <!-- Authentication Links -->
             @guest
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                    <a class="nav-link" style="text-decoration: none;color: white" href="{{ route('login') }}">{{ __('Connexion') }}</a>
                 </li>
                 @if (Route::has('register'))
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                        <a class="nav-link" style="text-decoration: none;color: white" href="{{ route('register') }}">{{ __('Inscription') }}</a>
                     </li>
                 @endif
             @else
                 <li class="nav-item">
-                    <a class="nav-link" href="admin">Zone Administrateur</a>
+                    <a class="nav-link" style="text-decoration: none;color: white" href="admin">Zone Administrateur</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a id="navbarDropdown"  class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
@@ -52,7 +45,7 @@
                         <a class="dropdown-item" href="{{ route('logout') }}"
                            onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
-                            {{ __('Logout') }}
+                            {{ __('Déconnexion') }}
                         </a>
                         <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                             @csrf
