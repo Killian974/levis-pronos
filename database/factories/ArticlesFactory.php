@@ -8,6 +8,7 @@ use Faker\Generator as Faker;
 $factory->define(\App\Models\Articles::class, function (Faker $faker) {
     return [
         'title' => $faker->text,
+        'url_img_article' => $faker->imageUrl(),
         'content' => $faker->paragraph,
         'author' => 'Admin',
         'category' => 'test',

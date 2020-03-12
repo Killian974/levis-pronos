@@ -16,7 +16,7 @@ class Articles extends Model
     public $timestamps = false;
 
     protected $fillable = [
-        'id', 'title', 'content', 'category', 'author', 'created_date'
+        'id', 'title', 'url_img_article', 'content', 'category', 'author', 'created_date'
     ];
 
 }
