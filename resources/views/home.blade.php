@@ -13,10 +13,16 @@
                             {{ session('status') }}
                         </div>
                     @endif
-                    You are logged in!
+                    Vous êtes désormais connecté ! Vous allez être re-dirigé automatiquement vers la zone administrateur
                 </div>
             </div>
         </div>
     </div>
+
+    <script type="text/javascript">
+        var obj = 'window.location.replace("admin");';
+        setTimeout(obj,1000);
+    </script>
+
 </div>
 @endsection

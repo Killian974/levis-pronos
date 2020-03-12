@@ -7,10 +7,10 @@ use Faker\Generator as Faker;
 
 $factory->define(\App\Models\Articles::class, function (Faker $faker) {
     return [
-        'title' => $faker->title,
-        'content' => $faker->text,
+        'title' => $faker->text,
+        'content' => $faker->paragraph,
         'author' => 'Admin',
         'category' => 'test',
-        'created_date' => \Carbon\Carbon::now()->format('d-m-Y')
+        'created_date' => \Carbon\Carbon::now()
     ];
 });

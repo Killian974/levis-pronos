@@ -13,20 +13,6 @@ class ArticleSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('articles')->insert([
-            'title' => Str::random(30),
-            'content' => Str::random(500),
-            'category' => 'Test',
-            'author' => 'Admin',
-            'created_date' => \Carbon\Carbon::now()
-        ]);
-
-        DB::table('articles')->insert([
-            'title' => Str::random(30),
-            'content' => Str::random(500),
-            'category' => 'Test',
-            'author' => 'Admin',
-            'created_date' => \Carbon\Carbon::now()
-        ]);
+        $article = factory(\App\Models\Articles::class,(3))->create();
     }
 }
