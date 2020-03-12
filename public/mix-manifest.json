@@ -8,5 +8,6 @@
     "/css/validation.css": "/css/validation.css",
     "/css/blog.css": "/css/blog.css",
     "/css/article.css": "/css/article.css",
-    "/css/404.css": "/css/404.css"
+    "/css/404.css": "/css/404.css",
+    "/css/admin.css": "/css/admin.css"
 }
