@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Pronos;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 
 class AdminController extends Controller
@@ -44,7 +45,7 @@ class AdminController extends Controller
                 'title' => $data['title'],
                 'content' => $data['content'],
                 'category' => $data['category'],
-                'author' => $data['author'],
+                'author' => Auth::user()->name ,
                 'created_date' => Carbon::now()
             ]);
             $status = 200;
