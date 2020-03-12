@@ -49,11 +49,11 @@ Route::get('/pronostiques', 'PrognosticsController@showView');
  */
 Route::get('/success', 'ValidationController@showView');
 
-//Route::group(['middleware' => 'App\Http\Middleware\Admin'],function () {
+Route::group(['middleware' => 'App\Http\Middleware\Admin'],function () {
     Route::get('admin', 'AdminController@showView');
     Route::post('admin-add-pronos', 'AdminController@addPronos');
     Route::post('admin-add-article', 'AdminController@addArticle');
-//});
+});
 
 
 

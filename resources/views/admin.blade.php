@@ -120,13 +120,6 @@
                                 <textarea style="height: 120%" class="form-control" id="content" name="content"></textarea>
                             </div>
 
-                            <div class="form-group">
-                                <label for="team_2">Auteur :</label>
-                                <input type="text" class="form-control" id="author" name="author"
-                                       value="{{Auth::user()->name }}"
-                                readonly>
-                            </div>
-
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
                                 <button type="submit" class="btn btn-primary">Enregistrer</button>
