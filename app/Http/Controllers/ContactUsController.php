@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests\newMessageContactRequest;
 use App\Mail\mailAdminContact;
 use App\Mail\mailUserContact;
+use App\Models\Articles;
 use App\Object\Message;
 use http\Exception;
 use Illuminate\Http\Request;

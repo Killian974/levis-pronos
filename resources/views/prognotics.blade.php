@@ -158,286 +158,71 @@
     <div class="tab-content" id="myTabContent">
 {{--        Section Football--}}
         <div class="tab-pane fade show active" id="football" role="tabpanel" aria-labelledby="home-tab">
-            <div class="container" style="margin-top: 2%;">
-                <div class="row">
-                    <div class="col">
-                        <div class="card text-white bg-success mb-3" style="">
-                            <div class="card-header">01/01/2020</div>
-                            <div class="card-body">
-                                <p class="card-text">FC LORIENT - LE MANS </p>
-                                <p class="card-text">Pronostique : FC LORIENT </p>
-                                <p class="card-text">Cote :  2.15</p>
-                            </div>
+            <div class="container" style="margin-top: 2%; display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center;">
+                    @foreach($pronos as $prono)
+                        @if($prono->sport == 'Football')
+                            <div class="card text-white bg-success mb-3" style="width: 40%; margin: 2%">
+                                <div class="card-header">{{\Carbon\Carbon::parse($prono->date_match)->format('d-m-Y') }}</div>
+                                <div class="card-body">
+                                    <p class="card-text">{{$prono->team_1}} - {{$prono->team_2}} </p>
+                                    <p class="card-text">Pronostique :
+                                        @if($prono->prono == 1) {{$prono->team_1}}
+                                        @elseif($prono->prono == 2) Match nul
+                                        @else($prono->prono == 3) {{$prono->team_2}}@endif
+                                    </p>
+                                    <p class="card-text">Cote :  {{$prono->cote}}</p>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="card text-white bg-success mb-3" style="">
-                            <div class="card-header">09/01/2020</div>
-                            <div class="card-body">
-                                <p class="card-text">FC Nantes - Amiens </p>
-                                <p class="card-text">Pronostique : FC Nantes </p>
-                                <p class="card-text">Cote :  1.95</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <div class="card text-white bg-warning mb-3" style="">
-                            <div class="card-header">10/12/2019</div>
-                            <div class="card-body">
-                                <p class="card-text">Marseille - Angers</p>
-                                <p class="card-text">Pronostique : Marseille </p>
-                                <p class="card-text">Cote :  1.60</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card text-white bg-success mb-3" style="">
-                            <div class="card-header">10/12/2019</div>
-                            <div class="card-body">
-                                <p class="card-text">FC Nantes - Brest </p>
-                                <p class="card-text">Pronostique : FC Nantes </p>
-                                <p class="card-text">Cote :  1.55</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <div class="card text-white bg-success mb-3" style="">
-                            <div class="card-header">10/12/2019</div>
-                            <div class="card-body">
-                                <p class="card-text">Marseille - Angers</p>
-                                <p class="card-text">Pronostique : Marseille </p>
-                                <p class="card-text">Cote :  1.60</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card text-white bg-success mb-3" style="">
-                            <div class="card-header">10/12/2019</div>
-                            <div class="card-body">
-                                <p class="card-text">FC Nantes - Brest </p>
-                                <p class="card-text">Pronostique : FC Nantes </p>
-                                <p class="card-text">Cote :  1.55</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <div class="card text-white bg-success mb-3" style="">
-                            <div class="card-header">10/12/2019</div>
-                            <div class="card-body">
-                                <p class="card-text">Marseille - Angers</p>
-                                <p class="card-text">Pronostique : Marseille </p>
-                                <p class="card-text">Cote :  1.60</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card text-white bg-warning mb-3" style="">
-                            <div class="card-header">10/12/2019</div>
-                            <div class="card-body">
-                                <p class="card-text">FC Nantes - Brest </p>
-                                <p class="card-text">Pronostique : FC Nantes </p>
-                                <p class="card-text">Cote :  1.55</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                        @endif
+                    @endforeach
         </div>
-{{--Section Basket--}}
+        {{--Section Basket--}}
         <div class="tab-pane fade" id="basket" role="tabpanel" aria-labelledby="basket-tab">
-            <div class="container" style="margin-top: 2%;">
+            <div class="container" style="margin-top: 2%">
                 <div class="row">
-                    <div class="col">
-                        <div class="card text-white bg-warning mb-3" style="">
-                            <div class="card-header">01/01/2020</div>
-                            <div class="card-body">
-                                <p class="card-text">FC LORIENT - LE MANS </p>
-                                <p class="card-text">Pronostique : FC LORIENT </p>
-                                <p class="card-text">Cote :  2.15</p>
+                    @foreach($pronos as $prono)
+                        @if($prono->sport == 'Basket')
+                            <div class="col w-50">
+                                <div class="card text-white bg-success mb-3" style="">
+                                    <div class="card-header">{{\Carbon\Carbon::parse($prono->date_match)->format('d-m-Y') }}</div>
+                                    <div class="card-body">
+                                        <p class="card-text">{{$prono->team_1}} - {{$prono->team_2}} </p>
+                                        <p class="card-text">Pronostique :
+                                            @if($prono->prono == 1) {{$prono->team_1}}
+                                            @elseif($prono->prono == 2) Match nul
+                                            @else($prono->prono == 3) {{$prono->team_2}}@endif
+                                        </p>
+                                        <p class="card-text">Cote :  {{$prono->cote}}</p>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card text-white bg-success mb-3" style="">
-                            <div class="card-header">09/01/2020</div>
-                            <div class="card-body">
-                                <p class="card-text">FC Nantes - Amiens </p>
-                                <p class="card-text">Pronostique : FC Nantes </p>
-                                <p class="card-text">Cote :  1.95</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <div class="card text-white bg-success mb-3" style="">
-                            <div class="card-header">10/12/2019</div>
-                            <div class="card-body">
-                                <p class="card-text">Marseille - Angers</p>
-                                <p class="card-text">Pronostique : Marseille </p>
-                                <p class="card-text">Cote :  1.60</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card text-white bg-success mb-3" style="">
-                            <div class="card-header">10/12/2019</div>
-                            <div class="card-body">
-                                <p class="card-text">FC Nantes - Brest </p>
-                                <p class="card-text">Pronostique : FC Nantes </p>
-                                <p class="card-text">Cote :  1.55</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <div class="card text-white bg-success mb-3" style="">
-                            <div class="card-header">10/12/2019</div>
-                            <div class="card-body">
-                                <p class="card-text">Marseille - Angers</p>
-                                <p class="card-text">Pronostique : Marseille </p>
-                                <p class="card-text">Cote :  1.60</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card text-white bg-success mb-3" style="">
-                            <div class="card-header">10/12/2019</div>
-                            <div class="card-body">
-                                <p class="card-text">FC Nantes - Brest </p>
-                                <p class="card-text">Pronostique : FC Nantes </p>
-                                <p class="card-text">Cote :  1.55</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <div class="card text-white bg-success mb-3" style="">
-                            <div class="card-header">10/12/2019</div>
-                            <div class="card-body">
-                                <p class="card-text">Marseille - Angers</p>
-                                <p class="card-text">Pronostique : Marseille </p>
-                                <p class="card-text">Cote :  1.60</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card text-white bg-warning mb-3" style="">
-                            <div class="card-header">10/12/2019</div>
-                            <div class="card-body">
-                                <p class="card-text">FC Nantes - Brest </p>
-                                <p class="card-text">Pronostique : FC Nantes </p>
-                                <p class="card-text">Cote :  1.55</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                        @endif
+                    @endforeach
             </div>
         </div>
-{{--        Section Tennis--}}
+        {{--        Section Tennis--}}
         <div class="tab-pane fade" id="tennis" role="tabpanel" aria-labelledby="tennis-tab">
-            <div class="container" style="margin-top: 2%;">
+            <div class="container" style="margin-top: 2%">
                 <div class="row">
-                    <div class="col">
-                        <div class="card text-white bg-success mb-3" style="">
-                            <div class="card-header">01/01/2020</div>
-                            <div class="card-body">
-                                <p class="card-text">FC LORIENT - LE MANS </p>
-                                <p class="card-text">Pronostique : FC LORIENT </p>
-                                <p class="card-text">Cote :  2.15</p>
+                    @foreach($pronos as $prono)
+                        @if($prono->sport == 'Tennis')
+                            <div class="col w-50">
+                                <div class="card text-white bg-success mb-3" style="">
+                                    <div class="card-header">{{\Carbon\Carbon::parse($prono->date_match)->format('d-m-Y') }}</div>
+                                    <div class="card-body">
+                                        <p class="card-text">{{$prono->team_1}} - {{$prono->team_2}} </p>
+                                        <p class="card-text">Pronostique :
+                                            @if($prono->prono == 1) {{$prono->team_1}}
+                                            @elseif($prono->prono == 2) Match nul
+                                            @else($prono->prono == 3) {{$prono->team_2}}@endif
+                                        </p>
+                                        <p class="card-text">Cote :  {{$prono->cote}}</p>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card text-white bg-success mb-3" style="">
-                            <div class="card-header">09/01/2020</div>
-                            <div class="card-body">
-                                <p class="card-text">FC Nantes - Amiens </p>
-                                <p class="card-text">Pronostique : FC Nantes </p>
-                                <p class="card-text">Cote :  1.95</p>
-                            </div>
-                        </div>
-                    </div>
+                        @endif
+                    @endforeach
                 </div>
-                <div class="row">
-                    <div class="col">
-                        <div class="card text-white bg-success mb-3" style="">
-                            <div class="card-header">10/12/2019</div>
-                            <div class="card-body">
-                                <p class="card-text">Marseille - Angers</p>
-                                <p class="card-text">Pronostique : Marseille </p>
-                                <p class="card-text">Cote :  1.60</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card text-white bg-success mb-3" style="">
-                            <div class="card-header">10/12/2019</div>
-                            <div class="card-body">
-                                <p class="card-text">FC Nantes - Brest </p>
-                                <p class="card-text">Pronostique : FC Nantes </p>
-                                <p class="card-text">Cote :  1.55</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col">
-                        <div class="card text-white bg-success mb-3" style="">
-                            <div class="card-header">10/12/2019</div>
-                            <div class="card-body">
-                                <p class="card-text">Marseille - Angers</p>
-                                <p class="card-text">Pronostique : Marseille </p>
-                                <p class="card-text">Cote :  1.60</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card text-white bg-success mb-3" style="">
-                            <div class="card-header">10/12/2019</div>
-                            <div class="card-body">
-                                <p class="card-text">FC Nantes - Brest </p>
-                                <p class="card-text">Pronostique : FC Nantes </p>
-                                <p class="card-text">Cote :  1.55</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="row">
-                    <div class="col">
-                        <div class="card text-white bg-success mb-3" style="">
-                            <div class="card-header">10/12/2019</div>
-                            <div class="card-body">
-                                <p class="card-text">Marseille - Angers</p>
-                                <p class="card-text">Pronostique : Marseille </p>
-                                <p class="card-text">Cote :  1.60</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card text-white bg-warning mb-3" style="">
-                            <div class="card-header">10/12/2019</div>
-                            <div class="card-body">
-                                <p class="card-text">FC Nantes - Brest </p>
-                                <p class="card-text">Pronostique : FC Nantes </p>
-                                <p class="card-text">Cote :  1.55</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
         </div>
     </div>
 @endsection
