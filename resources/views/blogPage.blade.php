@@ -18,6 +18,7 @@
             <a href="/blog/article/{{{$article->id}}}">
                     <div class="card">
                         <div class="card-body">
+                        <img src="{{$article->url_img_article}}" class="card-img-top">
                         <h2 class="card-title">{{ $article->title }}</h2>
                         <p class="dateAuthor">{{ $article->author }}</p>
                         <p class="card-text articleText">{{ $article->content }}</p>

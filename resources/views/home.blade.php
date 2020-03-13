@@ -1,7 +1,7 @@
 @extends('layout.pageDefault')
 
 @section('content')
-<div class="container">
+<div class="container" style="margin: 5% auto 10% auto">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">

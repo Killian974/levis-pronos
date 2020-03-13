@@ -3,21 +3,36 @@
 @section('title', 'Zone Administrateur')
 
 @push('style')
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/index.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/admin.css') }}">
 @endpush
 
 @section('content')
-<div class="container" style="text-align: center">
+<div class="mainContainer" style="text-align: center">
 
     @if($status ?? '' && $status ?? '' === 200)
         <div class="alert alert-success" role="alert">
             Le contenu a bien été enregistré. Vous pouvez désormais le consulter !
         </div>
     @endif
+    <h2>Bienvenue dans la zone Administrateur</h2>
 
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addPronos">
-        Ajouter un prono
-    </button>
+    <div class="buttonContainer">
+        <div class="card">
+            <div class="card-body">
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addPronos">
+                    Ajouter un prono
+                </button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addArticle">
+                    Ajouter un article
+                </button>
+            </div>
+        </div>
+    </div>
+
 
     <!-- Modal -->
     <div class="modal fade" id="addPronos" tabindex="-1" role="dialog" aria-labelledby="addPronos" aria-hidden="true">
@@ -85,11 +100,6 @@
             </div>
         </div>
     </div>
-
-
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addArticle">
-            Ajouter un article
-        </button>
 
         <!-- Modal -->
         <div class="modal fade bd-example-modal-lg" id="addArticle" tabindex="-1" role="dialog" aria-labelledby="addArticle" aria-hidden="true">

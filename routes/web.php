@@ -55,4 +55,16 @@ Route::group(['middleware' => 'App\Http\Middleware\Admin'],function () {
     Route::post('admin-add-article', 'AdminController@addArticle');
 });
 
+
+
+/**
+ * Route page blog
+ */
+Route::get('/blog', 'BlogController@showView');
+
+/**
+ * Route page article
+ */
+Route::get('/blog/article/{id}', 'ArticlePage@showArticle');
+
 Route::get('/home', 'HomeController@index')->name('home');
