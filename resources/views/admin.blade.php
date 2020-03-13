@@ -121,7 +121,12 @@
                             </div>
 
                             <div class="form-group">
-                                <label for="title">Catégorie de l'article :</label>
+                                <label for="url_img_article">Url de l'image de présentation :</label>
+                                <input type="text" class="form-control" id="url_img_article" name="url_img_article">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="category">Catégorie de l'article :</label>
                                 <input type="text" class="form-control" id="category" name="category">
                             </div>
 

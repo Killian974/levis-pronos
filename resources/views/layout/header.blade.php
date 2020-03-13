@@ -41,7 +41,11 @@
                     </a>
 
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-
+                        @if(Auth::user()->admin == 1)
+                        <a class="dropdown-item" href="admin">
+                            Zone Administrateur
+                        </a>
+                        @endif
                         <a class="dropdown-item" href="{{ route('logout') }}"
                            onclick="event.preventDefault();
                             document.getElementById('logout-form').submit();">
@@ -50,9 +54,7 @@
                         <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                             @csrf
                         </form>
-                        <a class="dropdown-item" href="admin">
-                         Zone Admin
-                     </a>
+
                     </div>
                 </li>
             @endguest

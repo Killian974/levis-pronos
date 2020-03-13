@@ -17,7 +17,7 @@ class Admin
     public function handle($request, Closure $next)
     {
         if ($request->user() && $request->user()->admin != 1){
-            return new Response(view('errors.404'));
+            return new Response(view('index'));
         }
         if ($request->user() === null){
             return new Response(view('errors.404'));
