@@ -31,6 +31,8 @@ a:hover {
 
 .item:hover > .card .card-title {
     overflow-wrap: unset;
+    white-space: normal;
+
 }
 
 .card-title {
@@ -39,6 +41,7 @@ a:hover {
     overflow-wrap: initial;
     overflow: hidden;
     text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .card-text {

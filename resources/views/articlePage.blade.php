@@ -13,7 +13,7 @@
         <p>{{$article->author}}, {{$article->created_date}}</p>
     </div>
     <div class="contentContainer">
-        <img src="https://fclweb.fr/voy_content/uploads/2017/08/img_2692.jpg" class="articleImg"/>
+    <img src="{{$article->url_img_article}}" class="articleImg"/>
     <p>{{$article->content}}</p>
     </div>
 </div>

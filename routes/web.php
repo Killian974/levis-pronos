@@ -55,8 +55,6 @@ Route::group(['middleware' => 'App\Http\Middleware\Admin'],function () {
     Route::post('admin-add-article', 'AdminController@addArticle');
 });
 
-<<<<<<< HEAD
-=======
 
 
 /**
@@ -69,5 +67,4 @@ Route::get('/blog', 'BlogController@showView');
  */
 Route::get('/blog/article/{id}', 'ArticlePage@showArticle');
 
->>>>>>> Fix blog link
 Route::get('/home', 'HomeController@index')->name('home');
