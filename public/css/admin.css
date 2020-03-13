@@ -1,0 +1,28 @@
+.footerContainer {
+  display: none;
+}
+
+.mainContainer {
+  margin: 3%;
+}
+
+h2 {
+  margin-bottom: 3%;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  margin: 3%;
+  width: 25%;
+  flex-direction: row;
+}
+
+.btn {
+  background: linear-gradient(0deg, #ffb521 0%, #ffeb67 100%);
+  border: none;
+}
+
