@@ -14,10 +14,34 @@ class Test extends TestCase
      *
      * @return void
      */
-    public function testExample()
+    public function testAccueil()
     {
         $response = $this->get('/');
-        $article = factory(Articles::class)->create();
         $response->assertStatus(200);
     }
+
+    public function testBasicTest()
+    {
+        $this->assertTrue(true);
+    }
+
+    public function getWhoWeAre()
+    {
+        $response = $this->get('/qui-sommes-nous');
+        $response->assertStatus(200);
+    }
+
+    public function getPronostics()
+    {
+        $response = $this->get('/pronostiques');
+        $response->assertStatus(200);
+    }
+
+    public function getContact()
+    {
+        $response = $this->get('/contact');
+        $response->assertStatus(200);
+    }
+
+
 }
