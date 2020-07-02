@@ -23,15 +23,23 @@ class AuthTest extends TestCase
         $response->assertStatus(200);
     }
 
-    public function testRegister(){
-        $data = array([
-            'name' => 'test',
-            'admin' => false,
-            'email' => 'email@gmail.com',
-            'password' => bcrypt('testtest'),
-            'date_created' => Carbon::now()
-        ]);
-        $response = $this->post('/register', $data);
+    public function testRegister()
+    {
+        $this->visit('/register')
+            ->type('toto@chez.fr', 'email')
+            ->type('password', 'password')
+            ->type('password','password-confirm')
+            ->press('Inscription')
+            ->see('gkjhkjlkklmkml');
+    }
+
+    public function testConnexion()
+    {
+        $this->visit('/login')
+            ->type('test@test.fr', 'email')
+            ->type('testtest', 'password')
+            ->press('Connexion')
+            ->see('erreur');
     }
 
     public function getRegister()
