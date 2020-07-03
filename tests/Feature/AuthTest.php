@@ -85,14 +85,14 @@ class AuthTest extends TestCase
     public function getPrognotics()
     {
         $response = $this->get('/pronostiques');
-        $response->assertViewIs('prognoticsqqq');
+        $response->assertViewIs('prognotics');
         $response->assertStatus(200);
     }
 
     public function getContact()
     {
         $response = $this->get('/contact');
-        $response->assertViewIs('contactddd');
+        $response->assertViewIs('contact');
         $response->assertStatus(200);
     }
 }
