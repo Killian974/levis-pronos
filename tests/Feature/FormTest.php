@@ -16,8 +16,8 @@ class FormTest extends TestCase
     public function testContact()
     {
         $this->visit('/contact')
-            ->type(null, 'lastname')
-            ->type(null, 'firstname')
+            ->type('lastnameTest', 'lastname')
+            ->type('firstnameTest', 'firstname')
             ->type('test-email-contact@gmail.com', 'email')
             ->type('Contact','subject')
             ->type('Contact','content')
@@ -27,7 +27,7 @@ class FormTest extends TestCase
     public function testNewsletter()
     {
         $this->visit('/home')
-            ->type(null, 'email')
+            ->type('email@test.com', 'email')
             ->press("S'inscrire");
     }
 }
