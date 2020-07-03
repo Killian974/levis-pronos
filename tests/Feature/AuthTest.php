@@ -30,7 +30,7 @@ class AuthTest extends TestCase
             ->type('password', 'password')
             ->type('password','password-confirm')
             ->press('Inscription')
-            ->see('gkjhkjlkklmkml');
+            ->see('Dashboard');
     }
 
     public function testConnexion()
@@ -39,35 +39,35 @@ class AuthTest extends TestCase
             ->type('test@test.fr', 'email')
             ->type('testtest', 'password')
             ->press('Connexion')
-            ->see('erreur');
+            ->see('Dashboard');
     }
 
     public function getRegister()
     {
         $response = $this->get('/register');
         $response->assertViewIs('auth.register');
-        $response->assertStatus(302);
+        $response->assertStatus(200);
     }
 
     public function getLogin()
     {
         $response = $this->get('/login');
         $response->assertViewIs('auth.login');
-        $response->assertStatus(404);
+        $response->assertStatus(200);
     }
 
     public function getHome()
     {
         $response = $this->get('/home');
         $response->assertViewIs('home');
-        $response->assertStatus(500);
+        $response->assertStatus(200);
     }
 
     public function testAccueil()
     {
         $response = $this->get('/');
         $response->assertViewIs('index');
-        $response->assertStatus(302);
+        $response->assertStatus(200);
     }
 
     public function testBasicTest()
@@ -79,7 +79,7 @@ class AuthTest extends TestCase
     {
         $response = $this->get('/qui-sommes-nous');
         $response->assertViewIs('presentation');
-        $response->assertStatus(404);
+        $response->assertStatus(200);
     }
 
     public function getPrognotics()
